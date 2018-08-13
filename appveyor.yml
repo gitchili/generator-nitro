@@ -11,6 +11,9 @@ deploy: off
 matrix:
   fast_finish: true
 
+init:
+  - git config --global core.autocrlf true
+
 install:
   - ps: Install-Product node $env:nodejs_version
   - set PATH=%APPDATA%\npm;%PATH%
