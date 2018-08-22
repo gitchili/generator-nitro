@@ -1,6 +1,6 @@
 {
   "name": "@nitro/gulp",
-  "version": "0.3.0",
+  "version": "0.3.3",
   "description": "Nitro gulp",
   "license": "MIT",
   "author": "The Nitro Team",
@@ -8,7 +8,7 @@
     "node": ">=8 <11"
   },
   "scripts": {
-    "lint": "eslint ./tasks ./utils",
+    "lint": "eslint ./lib ./tasks",
     "test": "npm run lint",
     "prepublishOnly": "nsp check --output summary"
   },
@@ -23,7 +23,7 @@
   ],
   "dependencies": {
     "@nitro/app": "*",
-    "backstopjs": "3.5.2",
+    "backstopjs": "3.5.5",
     "browser-sync": "2.24.6",
     "compression": "1.7.3",
     "config": "2.0.1",
@@ -37,7 +37,7 @@
     "gulp-declare": "0.3.0",
     "gulp-header": "2.0.5",
     "gulp-imagemin": "4.1.0",
-    "gulp-htmllint": "0.0.15",
+    "gulp-htmllint": "0.0.16",
     "gulp-live-server": "0.0.31",
     "gulp-load-plugins": "1.5.0",
     "gulp-newer": "1.4.0",
@@ -51,12 +51,13 @@
     "gulp-wrap": "0.14.0",
     "imagemin-pngquant": "6.0.0",
     "merge-stream": "1.0.1",
+    "portfinder": "1.0.17",
     "yargs": "12.0.1"
   },
   "devDependencies": {
-    "@namics/eslint-config": "5.0.1",
-    "eslint": "4.19.1",
-    "eslint-plugin-import": "2.13.0",
+    "@namics/eslint-config": "6.0.0",
+    "eslint": "5.4.0",
+    "eslint-plugin-import": "2.14.0",
     "nsp": "3.2.1"
   },
   "publishConfig": {
